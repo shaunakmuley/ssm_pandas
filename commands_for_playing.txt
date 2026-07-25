@@ -3,6 +3,10 @@
 different commands for playing:
 if confused check what they do with the help of google or ai tools
 
+
+play with it and check with and without parenthesis
+
+
 file.shape
 file.head
 file.tail
@@ -14,8 +18,25 @@ file.isnull().sum
 file.duplicated
 file.index
 file.dtypes
-df.mean
-df.median
-df.mode
+file.mean
+file.median
+file.mode
+pd.isnull(file)
+file.nunique
+file.count
+file.value_counts
+file.drop
+file.dropna
+file.fillna
+file.rename
+file.sort_values
+file.groupby
+file.query
+file.largest
+file.smallest
+file.iloc[1:10]                   #give first 10 rows
+df.loc[df['Age'] > 25]            #find everyone over 25
+
+
 
 '''
