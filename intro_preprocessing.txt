@@ -1,0 +1,61 @@
+#I dont understand this so unserstand this later
+np.random.seed(0)
+
+
+
+
+The process in which the company works is 
+
+
+
+data extrection    ->    data preprocessing    ->    data loading    ->    operations or analyzing data
+
+
+extract data              data cleaning              loading data             various operations or 
+from multiple             and prepare to                                      making graphs or charts
+sources                   load so that                                        to analyze trends
+                          no mistake happen
+integrate data            in analyzing
+means 
+combine it 
+
+
+
+
+In data cleaning we do :
+
+first we check size of data
+
+#Check missing values :
+First we check the missing values count per column by
+file.isnull().sum()
+OR BY SLICING
+a=file.isnull().sum()
+a[0:10]  
+by 
+a.sum() we get total missing values in whole dataset
+by 
+np.prod(file.shape) we get total no of items in the dataset
+and by both using this we can find tthe percentage of the missing data in the dataset
+
+#Check why the data is missing :
+Not part of the data enginnering by using your iq and logic This helps the lot
+
+
+#What we can do after finding missing values :
+1.Drop rows with missing values 
+file.dropna()
+file.dropna(axis=0)
+2.Drop col with missing values
+file.dropna(axis=1)
+file.dropna(subset=['col1', 'col2'])
+
+3.Filling Missing values automatically
+b=file.loc[:,'col1':'col5']        #give all rows from col1 to col5
+b.fillna(0)                        #fill all mmissing with zero in b
+file.fillna(method='ffill',axis=1)     #Before: [ 10,  NaN,  30 ]
+                                        After ffill: [ 10,  10,  30 ]
+                                        
+file.fillna(method='bfill',axis=1)     #[ 10,  NaN,  30 ]
+                                        After bfill: [ 10,  30,  30 ]
+
