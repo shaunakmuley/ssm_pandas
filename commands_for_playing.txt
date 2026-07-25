@@ -1,0 +1,21 @@
+'''
+
+different commands for playing:
+if confused check what they do with the help of google or ai tools
+
+file.shape
+file.head
+file.tail
+file.info
+file.describe
+file.isnull
+file.sum
+file.isnull().sum
+file.duplicated
+file.index
+file.dtypes
+df.mean
+df.median
+df.mode
+
+'''
