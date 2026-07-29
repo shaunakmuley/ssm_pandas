@@ -18,3 +18,4 @@ start with import pandas as pd
 how to read file:
 file = pd.read_csv("file path")
 
+ 
